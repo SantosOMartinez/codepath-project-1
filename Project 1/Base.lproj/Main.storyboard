@@ -16,52 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-xA-TMY">
-                                <rect key="frame" x="96.666666666666686" y="103" width="200" height="347"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-xA-TMY">
+                                <rect key="frame" x="0.0" y="103" width="393" height="333"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="9PC-Fv-xhe">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="121.66666666666669" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9PC-Fv-xhe" secondAttribute="height" multiplier="1:1" id="7Xi-2U-rlw"/>
-                                            <constraint firstAttribute="height" constant="200" id="7ap-Be-ePh"/>
+                                            <constraint firstAttribute="height" constant="150" id="7ap-Be-ePh"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-zQ-aNi">
-                                        <rect key="frame" x="0.0" y="204" width="200" height="34.333333333333343"/>
-                                        <gestureRecognizers/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Favorite mood"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="izU-9F-tYo" appends="YES" id="rPd-TX-98Q"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5M-Xu-Prd">
-                                        <rect key="frame" x="0.0" y="242.33333333333334" width="200" height="34.333333333333343"/>
-                                        <gestureRecognizers/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="What's my hobby ?"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Naq-z1-eFC" appends="YES" id="03W-Bb-ay1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjL-eb-GkK">
-                                        <rect key="frame" x="0.0" y="280.66666666666669" width="200" height="34.333333333333314"/>
-                                        <gestureRecognizers/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="One crazy adventure"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="oSr-kf-7as" appends="YES" id="Hjc-Yj-AvE"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dly-f6-JJ9">
+                                        <rect key="frame" x="32" y="166" width="329" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-zQ-aNi">
+                                                <rect key="frame" x="0.0" y="0.0" width="329" height="34.333333333333336"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Favorite mood"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="izU-9F-tYo" appends="YES" id="rPd-TX-98Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5M-Xu-Prd">
+                                                <rect key="frame" x="0.0" y="50.333333333333314" width="329" height="34.333333333333343"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="What's my hobby ?"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Naq-z1-eFC" appends="YES" id="03W-Bb-ay1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjL-eb-GkK">
+                                                <rect key="frame" x="0.0" y="100.66666666666669" width="329" height="34.333333333333343"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="One crazy adventure"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="oSr-kf-7as" appends="YES" id="Hjc-Yj-AvE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dly-f6-JJ9" secondAttribute="trailing" constant="32" id="pRW-ft-2hy"/>
+                                    <constraint firstItem="dly-f6-JJ9" firstAttribute="leading" secondItem="8Zo-xA-TMY" secondAttribute="leading" constant="32" id="sWn-K2-ywE"/>
+                                </constraints>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="32" right="0.0"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Zo-xA-TMY" secondAttribute="trailing" id="3yZ-9s-U5u"/>
                             <constraint firstItem="8Zo-xA-TMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MbK-6w-j3i"/>
-                            <constraint firstItem="8Zo-xA-TMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8b-0F-m1x"/>
+                            <constraint firstItem="8Zo-xA-TMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SLJ-wS-dgF"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -102,22 +112,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qbx-z0-qa8">
                                 <rect key="frame" x="16" y="103.00000000000001" width="361" height="236.33333333333337"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnu-Mb-ogC">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="F6v-Y2-xyo">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="F6v-Y2-xyo">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="top" secondItem="F6v-Y2-xyo" secondAttribute="top" id="HlM-oE-sr6"/>
-                                            <constraint firstAttribute="trailing" secondItem="F6v-Y2-xyo" secondAttribute="trailing" id="JuR-tl-4jj"/>
-                                            <constraint firstAttribute="height" constant="200" id="byE-UK-0Pe"/>
-                                            <constraint firstAttribute="bottom" secondItem="F6v-Y2-xyo" secondAttribute="bottom" id="gn4-L2-V8D"/>
-                                            <constraint firstAttribute="leading" secondItem="F6v-Y2-xyo" secondAttribute="leading" id="uit-WF-FGJ"/>
+                                            <constraint firstAttribute="height" constant="200" id="yAN-7O-TdT"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Lorem ipsum" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-3L-Cj1">
                                         <rect key="frame" x="0.0" y="216" width="361" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -140,7 +140,6 @@
                     <connections>
                         <outlet property="detailImage" destination="F6v-Y2-xyo" id="53q-0I-VK0"/>
                         <outlet property="detailInfo" destination="2cs-3L-Cj1" id="vmH-PN-XUr"/>
-                        <outlet property="imageContainer" destination="Nnu-Mb-ogC" id="vyC-DI-z3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yx6-dt-yLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

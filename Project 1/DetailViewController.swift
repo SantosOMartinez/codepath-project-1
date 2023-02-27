@@ -11,7 +11,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailInfo: UILabel!
     @IBOutlet weak var detailImage: UIImageView!
-    @IBOutlet weak var imageContainer: UIView!
+
 
     var info: Info?
 
