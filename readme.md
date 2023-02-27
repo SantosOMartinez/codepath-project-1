@@ -4,25 +4,21 @@ Submitted by: Santos O. Martínez Braña
 
 **Snoopy's Story** is an app that introduces some of Snoopy's background. 
 
-Time spent: **2** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] Users are able to see a customized app icon and launch screen
-- [X] Your app should work for any screen size and orientation using AutoLayout constraints
-- [X] Users are able to see at least 3 context items
-- [X] Users are able to tap into each context item and see detail view contains information about each item (title, description, picture if applicable, etc.)
+- [X] Users are able to see a customized app icon and launch screen.
+- [X] Your app should work for any screen size and orientation using AutoLayout constraints.
+- [X] Users are able to see at least 3 context items.
+- [X] Users are able to tap into each context item and see detail view contains information about each item. (title, description, picture if applicable, etc.)
  
 The following **optional** features are implemented:
 
-- [X] Improve and customize the user interface through styling and coloring
-- [ ] Allow users to scroll when context items are off-screen (table view implemention)
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] Improve and customize the user interface through styling and coloring.
+- [X] Allow users to scroll when context items are off-screen.
 
 ## Video Walkthrough
 

@@ -60,7 +60,7 @@ memory that I'll never forget. Who knows, maybe one day I'll take to the \
 skies again! Woof woof!
 """
 
-let funFacts: [Info] = [
+let funFacts = [
     Info(image: UIImage(named: "image1")!, text: text1),
     Info(image: UIImage(named: "image2")!, text: text2),
     Info(image: UIImage(named: "image3")!, text: text3)

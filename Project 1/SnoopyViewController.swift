@@ -9,42 +9,31 @@ import UIKit
 
 class SnoopyViewController: UIViewController {
 
+    let DETAIL_SEGUE = "detailSegue"
+
     @IBOutlet weak var image: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Make the cover image a circle
         image.layer.cornerRadius = image.frame.size.width / 2
         image.clipsToBounds = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func didTapButton(_ sender: UITapGestureRecognizer) {
         if let tappedView = sender.view {
-            performSegue(withIdentifier: "detailSegue", sender: tappedView)
+            performSegue(withIdentifier: DETAIL_SEGUE, sender: tappedView)
         }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "detailSegue" else {
+        guard segue.identifier == DETAIL_SEGUE else {
             return
         }
 
-        typealias DetailView = DetailViewController
-
         guard let tappedView = sender as? UIButton,
-              let detailView = segue.destination as? DetailView else {
+              let detailView = segue.destination as? DetailViewController else {
                   return
         }
 
