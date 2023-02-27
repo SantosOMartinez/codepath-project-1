@@ -24,9 +24,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-
+https://user-images.githubusercontent.com/60373473/221677685-9c10b630-491f-4e57-b3c2-601779bdbf67.mp4
 
 <!-- Replace this with whatever GIF tool you used! -->
+<!-- Note: Used MP4 video format instead of GIF as the file size was way smaller at a higher quality.-->
 Video created with:
 - Recorded in QuickTime Player
 - Edited in Final Cut Pro
@@ -40,7 +41,7 @@ Video created with:
 
 Describe any challenges encountered while building the app:
 
-Compared to SwiftUI, editing the style of a given view is less intuitive and has a lower DX (developer experience) in general. Other than that I guess the biggest challenge is working with storyboard having to fight its different constraint issues.
+Compared to SwiftUI, editing the style of a given view is less intuitive and has a lower DX (developer experience) in general. Other than that I guess the biggest challenge is working with Storyboard having to fight its different constraint issues.
 
 I can compare this to when first learning Rust where the lack of knowledge creates friction with the use of the compiler. I assume as I get better at understanding all of the hidden complexities of Storyboard I will start enjoying the experience more. I think the greatest point of friction just comes with the inherent lack of expertise in this area rather than a flaw in the way the system is built.
 
