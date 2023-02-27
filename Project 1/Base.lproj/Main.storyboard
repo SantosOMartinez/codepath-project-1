@@ -130,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qbx-z0-qa8">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="300.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="317.66666666666669"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="F6v-Y2-xyo">
                                                 <rect key="frame" x="16" y="16" width="361" height="200"/>
@@ -139,13 +139,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Lorem ipsum" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-3L-Cj1">
-                                                <rect key="frame" x="16" y="232" width="361" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="16" y="232" width="361" height="21.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.28222317152667542" green="0.25576474919604941" blue="0.43744591586634657" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="48" right="16"/>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="64" right="16"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -168,7 +168,7 @@
                             <constraint firstItem="6vq-4D-W5W" firstAttribute="leading" secondItem="c3d-M9-97a" secondAttribute="leading" id="yjg-w3-fBD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Favorite mood" id="0nL-v9-cI8"/>
+                    <navigationItem key="navigationItem" title="Favorite mood" style="browser" id="0nL-v9-cI8"/>
                     <connections>
                         <outlet property="detailImage" destination="F6v-Y2-xyo" id="53q-0I-VK0"/>
                         <outlet property="detailInfo" destination="2cs-3L-Cj1" id="vmH-PN-XUr"/>

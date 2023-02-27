@@ -22,15 +22,31 @@ class DetailViewController: UIViewController {
             return
         }
 
-        styleImage()
+        customStyles(info)
 
         detailImage.image = info.image
         detailInfo.text = info.text
     }
 
-
-    func styleImage() {
+    func customStyles(_ info: Info) {
         detailImage.clipsToBounds = true
         detailImage.layer.cornerRadius = 16
+        detailInfo.textColor = info.color
+        view.backgroundColor = info.bg
+
+        navigationController?.navigationBar.prefersLargeTitles = true
+        typealias Attributes = [NSAttributedString.Key : Any]
+
+        let attributes: Attributes = [.foregroundColor: info.color]
+        let appearance = UINavigationBarAppearance()
+
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = info.bg
+        appearance.titleTextAttributes = attributes
+        appearance.largeTitleTextAttributes = attributes
+        navigationItem.standardAppearance = appearance
+        navigationItem.scrollEdgeAppearance = appearance
+        navigationItem.compactAppearance = appearance
+
     }
 }

@@ -10,6 +10,8 @@ import UIKit
 struct Info {
     let image: UIImage
     let text: String
+    let bg: UIColor
+    let color: UIColor
 }
 
 private let text1 = """
@@ -61,7 +63,14 @@ skies again! Woof woof!
 """
 
 let funFacts = [
-    Info(image: UIImage(named: "image1")!, text: text1),
-    Info(image: UIImage(named: "image2")!, text: text2),
-    Info(image: UIImage(named: "image3")!, text: text3)
+    Info(image: UIImage(named: "image1")!, text: text1,
+         bg: UIColor(red: 0.969, green: 0.982, blue: 0.891, alpha: 1.0),
+         color: UIColor(red: 0.395, green: 0.428, blue: 0.082, alpha: 1.0)),
+    Info(image: UIImage(named: "image2")!, text: text2,
+         bg: UIColor(red: 0.922, green: 0.804, blue: 0.773, alpha: 1.0),
+         color: UIColor(red: 0.329, green: 0.19, blue: 0.144, alpha: 1.0)),
+    Info(image: UIImage(named: "image3")!, text: text3,
+         bg: UIColor(red: 0.865, green: 0.806, blue: 0.974, alpha: 1.0),
+         color: UIColor(red: 0.349, green: 0.333, blue: 0.502, alpha: 1.0))
 ]
+
